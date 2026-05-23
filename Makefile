@@ -79,4 +79,4 @@ docker:
 ## help: Display available make targets
 help:
 	@echo "Available targets:"
-	@grep -E '^## ' Makefile | sed 's/## /  /'
+	@grep -E '^## ' Makefile | sed 's/^## /  /'
