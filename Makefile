@@ -80,3 +80,10 @@ docker:
 help:
 	@echo "Available targets:"
 	@grep -E '^## ' Makefile | sed 's/^## /  /'
+
+## run: Build and run telegraf with a local config for quick testing
+# Usage: make run CONFIG=./testdata/telegraf.conf
+CONFIG ?= ./etc/telegraf.conf
+run: build
+	@echo "Running $(BINARY) with config $(CONFIG)"
+	$(BIN_DIR)/$(BINARY) --config $(CONFIG)
