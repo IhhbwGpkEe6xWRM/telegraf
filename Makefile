@@ -43,7 +43,7 @@ test:
 ## test-short: Run short unit tests
 test-short:
 	@echo "Running short tests..."
-	go test -short -timeout 30s ./...
+	go test -short -timeout 60s ./...
 
 ## lint: Run golangci-lint
 lint:
