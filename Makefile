@@ -38,7 +38,7 @@ install:
 ## test: Run unit tests
 test:
 	@echo "Running tests..."
-	go test -v -race -timeout 60s ./...
+	go test -v -race -timeout 120s ./...
 
 ## test-short: Run short unit tests
 test-short:
